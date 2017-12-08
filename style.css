@@ -1,0 +1,208 @@
+html {
+    font-family: 'Lato',"Century Gothic",sans-serif;
+}
+
+@media screen and (max-width: 640px) {
+    
+    ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         width: 18%;
+         background-color: #152e4e;
+         opacity: 0.89;
+         position: fixed;
+         height: 100%;
+         overflow: auto;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+    }
+    
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+    
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+    
+        button {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            position: absolute;
+            float:left;
+            z-index: 2;
+        }
+    }
+    
+    @media screen and (min-width: 640px) {
+        button {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            position: absolute;
+            float:left;
+            z-index: 2;
+        }
+    
+        nav ul {
+            list-style-type:none;
+            background-color: #152e4e;
+            opacity: 0.89;
+            display:flex;
+            justify-content:space-around;
+            }
+            
+        nav li {
+            display:flex;
+            justify-content:space-between;
+            line-height:60px;
+        }
+            
+        nav li a {
+            text-decoration:none;
+            color:white;
+            font-size:25px;
+        }
+            
+        nav li :hover {
+            color:black;
+        }
+    
+    
+    }
+  
+body
+{
+	margin: 15px;
+    background-color: #001A33;
+}
+
+header
+{
+	height: 15%;
+	background-color: #152e4e;
+	opacity: 0.89;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+#easterEgg{
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.logoEvenement {
+    width: 3rem;
+}
+
+h1 {
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+h2 {
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+
+.liste * {
+    line-height: 4;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 3;
+}
+
+.liste a:hover {
+    color: grey;
+
+}
+
+.lien {
+    text-decoration:underline;
+}
+
+.source {
+    color: grey;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: white;
+}
+
+.logoFooter {
+    width: 2.5rem;
+    padding-top: 10px;
+}
+
+
+form * {
+    color: white;
+}
+
+form {
+    margin:0 auto;
+    margin-top: 25px;
+    margin-bottom: 35px;
+	width:800px;
+	padding:1em;
+	border:1px solid #CCC;
+	border-radius:1em;
+}
+
+form div + div {
+	margin-top:1em;
+}
+
+label {
+	color:white;
+	display :flex;
+	flex-direction: column;
+}
+
+input {
+	font:1em sans-serif;
+	width:300px;
+    border:1px solid #999;
+    color: black;
+    
+}
+
+input:focus {
+	border-color:#000;
+}
+
+#afficher {
+	display:none;
+}

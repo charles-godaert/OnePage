@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Sécurité Routière</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    </head>
+
+    <body>
+        <button onclick="myFunction()"><img src="menu2.png"></button>
+        <header>
+            <h1>Prévention routière</h1>
+        </header>
+        <nav>
+            <div id="myDIV">
+                <ul id="navigation">
+                    <li><a href='#utiles' title="aller à la section 2">Numéro d'urgence</a></li>
+                    <li><a href='#statistiques' title="aller à la section 3">Statistiques</a></li>
+                    <li><a href='#secours' title="aller à la section 4">Premiers secours</a></li>
+                    <li><a href='#formulaire' title="aller à la section 4">Formulaire</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--............ INTRODUCTION ............-->
+        <section id="introduction">
+             <h2>Introduction</h2>
+                    <hr/>
+                    <p>Ce site va vous permettre de vous informer sur différents aspects de la sécurité routière, tel que les numeros d'urence, dangers et moyens de prévention.
+                       <br/>Tout ceçi est réalisé dans le cadre de la Nuit De L'Info <a id="easterEgg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">2017</a>: <a href="http://nuitdelinfo.com"><img class="logoEvenement" src="nuitInfoLogo-2.png" alt="NuitDeLIinfo"></a>
+                    </p>
+                    <hr/>
+            
+        </section>   
+        <!--............. UTILES .............-->
+    	<section id="utiles">
+            <h2>Numéros d'urgence</h2>
+            <p>En cas de problème, voici les numéros à composer:</p>
+            <div class="liste">
+                 <ul>
+                    <li><a href="https://www.service-public.fr/particuliers/actualites/003013">112: Urgence européeen</a></li>
+                    <li><a href="http://www.samu-urgences-de-france.fr/fr/">15: SAMU, Aide médicale d'urgence</a></li>
+                    <li><a href="https://www.police-nationale.interieur.gouv.fr/">17: Police</a></li>
+                    <li><a href="http://www.pompiers.fr/">18: Sapeurs-pompiers</a></li>
+                </ul>
+            </div>		
+            <hr/>
+        </section>
+
+        <!--............STATISTIQUES ............-->
+        <section id="statistiques">
+            <h2>Statistiques</h2>
+            <p>Il arrive de nombreux arridents sur la route chaque jour en France et dans le monde ayant des conséquences dramatiques </br>
+               Statistiques en France, 2016:</p>
+                <div class="liste">
+                    <ul>
+                        <li>75 127 bléssés</li>
+                        <li>3 477 personnes décédées</li>
+                        <li>801 entre 0 et 24ans</li>
+                        <li>700 deux-roues</li>
+                        <li>559 piétons</li>		
+                    </ul>
+                    
+            <p>Facteurs</p>
+                <div class="liste">
+                    <ul>
+                        <li>Vitesse: 31%</li>
+                        <li>Alcool: 19%</li>
+                        <li>Stupéfiants: 9%</li>
+                        <li>Refus de priorité: 13%</li>
+                        <li>559 piétons</li>		
+                    </ul>					
+                </div>    		
+                <a class="source" href="http://www.securite-routiere.gouv.fr">--Source--</a>
+                <hr/>
+        </section>
+
+        <!--............ SECOURS ............-->
+	    <section id="secours">
+            <h2>Gestes de premiers secours</h2>
+            <p>Si vous rencontrez une personne victime d'un accident, il faut impérativement posséder différents réflèxes:</p>
+            <div class="liste">
+                <ul>
+                    <li>Sécuriser la zone/bléssés</li>
+                    <li>Rassurer et évaluer la victime</li>
+                    <li>Demander de l'aide sur place et/aux <a  class="lien" href=#utiles>numéros d'urgence</a></li>
+                    <li>700 deux-roues</li>
+                    <li>559 piétons</li>		
+                </ul>					
+            </div>		
+            <a class="source" href="http://www.croix-rouge.fr/Je-me-forme/Particuliers/Les-6-gestes-de-base/Les-4-etapes-pour-porter-secours">--Source--</a>
+            <hr/>
+        </section>	
+
+        <!--............ FORMULAIRE ............-->
+        <section id="formulaire">
+            <h2>Formulaire</h2>
+			<form>
+				<div>
+					<label for="verre">Combien de verres avez-vous bu ?</label>
+					<input type="number" id="verre" name="verre" min="0" max="50" >
+				</div>
+				<div>
+					<label for="drogue">Avez vous consommé de la drogue ?</label>
+					<input type="radio" name="drogue" value="oui">Oui
+					<input type="radio" name="drogue" value="non">Non
+				</div>
+				<div>
+					<label for="voiture">Allez vous prendre la voiture ?</label>
+					<input type="radio" name="voiture" value="oui">Oui
+					<input type="radio" name="voiture" value="non">Non
+				</div>
+				<div class="button">
+					<input type="button" value="Découvrez votre réponse" onclick="masquer_div('afficher');" />
+				</div>
+				<div id="afficher">
+					<p>Je suis sur que vous avez bu ne prenez pas la voiture !</p>
+				</div>
+            </form>
+            <hr/>
+		</section>
+
+
+
+
+
+        <footer>Suivre la nuit de l'info: 
+            <a href="http://www.nuitdelinfo.com/"><img class="logoFooter" src="nuitInfoLogo.png"></a> 
+            <a href="https://www.instagram.com/explore/tags/nuitinfo/"><img class="logoFooter" src="logoInstagram.png"></a> 
+            <a href="https://www.facebook.com/NuitDeLInfo/"><img class="logoFooter" src="logoFacebook.png"></a>
+            <a href="https://twitter.com/nuitinfo/"><img class="logoFooter" src="logoTwitter.png"></a>                  
+        </footer>
+
+    </body>
+    
+    <script>
+            function myFunction() {
+                var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+
+            function masquer_div(id)
+            {
+                if (document.getElementById(id).style.display == 'none') {
+                    document.getElementById(id).style.display = 'block';
+                }
+                else {
+                    document.getElementById(id).style.display = 'none';
+                }
+        	}
+    </script>
+</html>
